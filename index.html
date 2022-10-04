@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width, minimal-ui, viewport-fit=cover, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!-- Meta Tags -->
+    <title>Chroma</title>
+    <meta name="title" content="Chroma" />
+    <meta name="description"
+        content="Meet Chroma, a scratchpad like no other, with clean design, elegant animations and a refined, tailor-made editing experience. 
+        With a focus on the little things as well as the big, Chroma is an absolute joy to use, whether its on iOS, or Android" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chroma.tanzilzubair.tech//" />
+    <meta property="og:title" content="Chroma" />
+    <meta name="description"
+        content="Meet Chroma, a scratchpad like no other, with clean design, elegant animations and a refined, tailor-made editing experience. 
+        With a focus on the little things as well as the big, Chroma is an absolute joy to use, whether its on iOS, or Android" />
+
+    <meta property="og:image" content="https://chroma.tanzilzubair.tech/assets/images/share/share.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://chroma.tanzilzubair.tech//" />
+    <meta property="twitter:title" content="Chroma" />
+    <meta name="description"
+        content="Meet Chroma, a scratchpad like no other, with clean design, elegant animations and a refined, tailor-made editing experience. 
+        With a focus on the little things as well as the big, Chroma is an absolute joy to use, whether its on iOS, or Android" />
+    <meta property="twitter:image" content="https://chroma.tanzilzubair.tech/assets/images/share/share.png" />
+
+    <!-- Favicons / Theme -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#1b1b1b" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="assets/css/global.css" rel="stylesheet" />
+
+    <!-- Common Styles For All Screens-->
+    <link rel="stylesheet" href="assets/css/common-components.css" />
+    <link rel="stylesheet" href="assets/css/common-typography.css" />
+
+    <!-- Styles For Small Screens-->
+    <link rel="stylesheet" media='(max-width: 450px)' href="assets/css/small/small.css" />
+    <link rel="stylesheet" media='(max-width: 450px)' href="assets/css/small/small-typography.css" />
+
+    <!-- Styles For Medium-x Screens-->
+    <link rel="stylesheet" media='(min-width: 451px) and (max-width: 650px)' href="assets/css/medium-x/medium-x.css" />
+    <link rel="stylesheet" media='(min-width: 451px) and (max-width: 650px)'
+        href="assets/css/medium-x/medium-typography-x.css" />
+
+    <!-- Styles For Medium-xx Screens-->
+    <link rel="stylesheet" media='(min-width: 651px) and (max-width: 800px)'
+        href="assets/css/medium-xx/medium-xx.css" />
+    <link rel="stylesheet" media='(min-width: 651px) and (max-width: 800px)'
+        href="assets/css/medium-xx/medium-typography-xx.css" />
+
+    <!-- Styles For Medium-xxx Screens-->
+    <link rel="stylesheet" media='(min-width: 801px) and (max-width: 950px)'
+        href="assets/css/medium-xxx/medium-xxx.css" />
+    <link rel="stylesheet" media='(min-width: 801px) and (max-width: 950px)'
+        href="assets/css/medium-xxx/medium-typography-xxx.css" />
+
+
+    <!-- Styles For Large-x Screens-->
+    <link rel="stylesheet" media='(min-width: 951px) and (max-width: 1100px)' href="assets/css/large-x/large-x.css" />
+    <link rel="stylesheet" media='(min-width: 951px) and (max-width: 1100px)'
+        href="assets/css/large-x/large-typography-x.css" />
+
+    <!-- Styles For Large-xx Screens-->
+    <link rel="stylesheet" media='(min-width: 1101px) and (max-width: 1300px)'
+        href="assets/css/large-xx/large-xx.css" />
+    <link rel="stylesheet" media='(min-width: 1101px) and (max-width: 1300px)'
+        href="assets/css/large-xx/large-typography-xx.css" />
+
+    <!-- Styles For Large-xxx Screens-->
+    <link rel="stylesheet" media='(min-width: 1301px) and (max-width: 1400px)'
+        href="assets/css/large-xxx/large-xxx.css" />
+    <link rel="stylesheet" media='(min-width: 1301px) and (max-width: 1400px)'
+        href="assets/css/large-xxx/large-typography-xxx.css" />
+
+    <!-- Styles For Large-xxxx Screens-->
+    <link rel="stylesheet" media='(min-width: 1401px)' href="assets/css/large-xxxx/large-xxxx.css" />
+    <link rel="stylesheet" media='(min-width: 1401px)' href="assets/css/large-xxxx/large-typography-xxxx.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Marquee';
+            src: url('assets/fonts/Marquee.otf') format("opentype");
+            font-weight: 900;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Vertical Header-->
+    <header class="main-header">
+        <div class="logo"><img src="assets/images/logo.svg" alt="Chroma logo" /></div>
+        <button class="home-prompt"></button>
+        <!-- Mobile Menu-->
+        <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation">
+            <label>Menu</label>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="home-button">
+            <a href="https://tanzilzubair.tech">T</a>
+        </div>
+    </header>
+
+    <!-- Rest of site -->
+    <main>
+        <!-- Home Section -->
+        <section class="home active">
+            <div class="container">
+                <div class="marquee">
+                    <ul class="letters">
+                        <!-- This first empty list item is needed to smoothen the loop-->
+                        <li></li>
+                        <li>LIGHTWEIGHT</li>
+                        <li class='separator'>/</li>
+                        <li>SECURE</li>
+                        <li class='separator'>/</li>
+                        <li>SEAMLESS</li>
+                        <li class='separator'>/</li>
+                        <li>BEAUTIFUL</li>
+                        <li class='separator'>/</li>
+                        <li>MINIMAL</li>
+                        <li class='separator'>/</li>
+                        <li>ELEGANT</li>
+                        <li class='separator'>/</li>
+                        <li>FAST</li>
+                        <li class='separator'>/</li>
+                    </ul>
+                </div>
+                <div class="home-grid">
+
+                    <div class="text-ring">
+                        <div id="circle" class="circle"><span style="--char-index: 0;" class="char">F</span><span
+                                style="--char-index: 1;" class="char">A</span><span style="--char-index: 2;"
+                                class="char">S</span><span style="--char-index: 3;" class="char">T</span><span
+                                style="--char-index: 4;" class="char">·</span><span style="--char-index: 5;"
+                                class="char">A</span><span style="--char-index: 6;" class="char">W</span><span
+                                style="--char-index: 7;" class="char">E</span><span style="--char-index: 8;"
+                                class="char">S</span><span style="--char-index: 9;" class="char">O</span><span
+                                style="--char-index: 10;" class="char">M</span><span style="--char-index: 11;"
+                                class="char">E</span><span style="--char-index: 12;" class="char">·</span><span
+                                style="--char-index: 13;" class="char">I</span><span style="--char-index: 14;"
+                                class="char">N</span><span style="--char-index: 15;" class="char">T</span><span
+                                style="--char-index: 16;" class="char">U</span><span style="--char-index: 17;"
+                                class="char">I</span><span style="--char-index: 18;" class="char">T</span><span
+                                style="--char-index: 19;" class="char">I</span><span style="--char-index: 20;"
+                                class="char">V</span><span style="--char-index: 21;" class="char">E</span><span
+                                style="--char-index: 22;" class="char">·</span><span style="--char-index: 23;"
+                                class="char">N</span><span style="--char-index: 24;" class="char">I</span><span
+                                style="--char-index: 25;" class="char">M</span><span style="--char-index: 26;"
+                                class="char">B</span><span style="--char-index: 27;" class="char">L</span><span
+                                style="--char-index: 28;" class="char">E</span><span style="--char-index: 29;"
+                                class="char">·</span>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="title">
+                        <div class="title-group">
+                            <h1 class="heading">CHROMA</h1>
+                            <h3 class="sub-heading-1">/ˈkrəʊmə/</h3>
+                            <h3 class="sub-heading-2"><em>noun</em></h3>
+                            <h3 class="sub-heading-3">purity or intensity of colour</h3>
+                        </div>
+                    </div>
+                    <div class="blurb">
+                        <p>
+                            Chroma is a scratchpad for the <em>digital</em> era. No more, no less. Where every app
+                            is distracted trying to do every <em>thing</em>, we focus on a few, and give you the
+                            <em>best</em>,
+                            so that every interaction you have with them feels special, <em>purposeful</em>. <br><br>
+
+                            We focus on simplicity, choose speed, and intertwine beauty and functionality into every
+                            last button; and we can’t wait for you to experience every last one of them.
+                        </p>
+                    </div>
+                    <div class="app-icon-container">
+                        <div class="app-icon">
+                            <img src="assets/images/Chroma.png" alt='App Icon'>
+                        </div>
+                        <div class="app-icon-text">
+                            <p><em>Our app icon! <br>
+                                    We hope you like it as much as we do!</em></p>
+                        </div>
+                    </div>
+                    <div class="download-ring">
+                        <div class="download-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#ffffff"
+                                viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="#ffffff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                                <polyline points="56 144 128 216 200 144" fill="none" stroke="#ffffff"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                            </svg>
+                        </div>
+                        <div class="download-text">
+                            <p>
+                                DOWNLOAD-ENJOY-
+                            </p>
+                            <script>
+                                const text = document.querySelector('.download-text p');
+                                text.innerHTML = text.innerText.split("").map(
+                                    (char, i) =>
+                                        `<span style="transform:rotate(${i * 24}deg)">${char}</span>`
+                                ).join("")
+                            </script>
+                        </div>
+                    </div>
+                    <div class="download-buttons-container">
+                        <div class="ios-download">
+                            <a href='' target="_blank">
+                                <img src="assets/images/App Store.png" alt='Get it on the App Store'>
+                            </a>
+                        </div>
+                        <div class="android-download">
+                            <a href='' target="_blank">
+                                <img src="assets/images/Play Store.png" alt='Get it on Google Play'>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="copyright-text">
+                        <p>© 2022 Tanzil Zubair Bin Zaman</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="first">
+            <header class="section-header">
+                <span class="number">I</span>
+                <span class="title-header">Features</span>
+            </header>
+            <div class="container">
+                <div class="animation">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="white"
+                        xmlns="http://www.w3.org/2000/svg"></svg>
+                </div>
+                <div class="content">
+                    <div class="introduction">
+                        <p>Meet <strong>Chroma</strong>. A scratchpad. But <em>so</em> much more.
+                            <br><br>With a lightweight frame that's instantly responsive, intuitive and
+                            <em>accessible</em> controls, and dual, purpose
+                            built,
+                            heavily optimized engines <strong>-</strong> one for when you're writing, and one for when
+                            you're drawing <strong>-</strong> Chroma is both agile, <em>and</em> packs the heaviest of
+                            punches.
+                        </p>
+                    </div>
+                    <div class="section-body">
+
+                        <div class="section-body-copy">
+                            <p> <strong>Chromatic Intuition:</strong> 7 colors and 14 spaces to unload your thoughts;
+                            </p>
+                            <p>Elegant, clean and minimal; giving you <strong><em>exactly</em></strong> the tools you
+                                need, and removing
+                                all the other distractions</p>
+                            <p> Keyboard controls, unlike <strong><em>any</em></strong> other; beautifully animated,
+                                instantly
+                                responsive and
+                                <em>always</em> accessible
+                            </p>
+                            <p>Write once, share <em>everywhere</em>. With a plethora of powerful options housed in
+                                familiar sharing
+                                methonds, Chroma lets you share, <em>just</em> as fast as you write</p>
+                            <p>Secured <em>on-device</em> by industry standard encryption methods, rest assured whatever
+                                you write or draw is <strong><em>protected</em></strong>.
+                            <p>With countless options for tweaking even the smallest aspects of Chroma, from auto
+                                focusing to pasting on start to granular (and elegant!) font size choices and font
+                                family choices, to even when Chroma loads and displays content; yours
+                                to tune and adjust
+                                and make Chroma your own.
+                            </p>
+                            <p>Built to make you <strong><em>smile</em></strong>. A passion project through and through,
+                                every single aspect
+                                of Chroma has been polished to perfection; and with heaps of new features, engine
+                                optimizations and bug fixes coming in regularly, the modern, fresh feel never goes away!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section id="second">
+            <header class="section-header">
+                <span class="number">II</span>
+                <span class="title-header">Vision</span>
+            </header>
+            <div class="container">
+                <div class="animation">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="white"
+                        xmlns="http://www.w3.org/2000/svg"></svg>
+                </div>
+                <div class="content">
+                    <div class="introduction">
+                        <p>Made with love, and built to last, Chroma is software written and honed for the very best
+                            editing
+                            and sketching possible <strong>-</strong> fast edits and quick sketches are our bread and
+                            butter,
+                            and in no small terms are what we built Chroma <em>around</em>
+                            <br> <br>
+                            Chroma, does something different than its competition. Focuses on fewer things. And it does
+                            them
+                            <strong><em>well</em></strong>. <br>
+                            It doesn't have ugly interfaces, or stupid gimmicks or untrustworthy practices; just the
+                            tools to get the job done, and the singular focus of getting you to an empty document, an
+                            empty canvas, as soon as possible, and then leave you be.
+                            <br><br>
+                            Chroma is <strong><em>useful</em></strong>, and its a <strong><em>joy</em></strong> to use;
+                            and everything we do, is in service to one or the other; usually <em>both</em>.
+                            <br> <br>
+                            And the best part? It's still <strong><em>just getting started</em></strong>. I already have
+                            lists and diagrams and specs for heaps of new features, improvements and tweaks, some
+                            already well into development, and my goal
+                            with Chroma is not simply for it to be the <em>best</em> of its kind, but perhaps
+                            more
+                            importantly, <em>the best version of itself that it could possibly be.</em>
+                            <br> <br>
+                            So, what are you waiting for?
+                            <br> <br>
+                            Download Chroma now, give it a spin, and join me on this journey! It's
+                            <strong>free!</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Section -->
+        <section id="third">
+            <header class="section-header">
+                <span class="number">III</span>
+                <span class="title-header">Engineering</span>
+            </header>
+            <div class="container">
+                <div class="animation">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="white"
+                        xmlns="http://www.w3.org/2000/svg"></svg>
+                </div>
+                <div class="content">
+                    <div class="introduction">
+                        <p>Chroma is built with a combination of <strong>2</strong> things, a <em>heavily</em>
+                            purpose optimized text editing engine with custom rendering and lightning fast parsing, that
+                            we like to call
+                            <em>Scribe</em>, and a revolutionary painting engine built completely in-house, called
+                            <em>Gloss</em>.
+                            <br><br>
+                            With modular design, performant architecture and deep capabilities all painstakingly
+                            stitched together by heavily optimized code that
+                            <em>purrs</em>, Chroma is <em>more</em> than capable of handling whatever you throw at it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Next Section -->
+        <section id="fourth">
+            <header class="section-header">
+                <span class="number">IV</span>
+                <span class="title-header">What's next</span>
+            </header>
+            <div class="container">
+                <div class="animation">
+                    <svg width="100" height="200" viewBox="0 0 100 200" fill="none" stroke="white"
+                        xmlns="http://www.w3.org/2000/svg"></svg>
+                </div>
+                <div class="content">
+                    <div class="introduction">
+                        <p>Chroma's just beginning. I have big plans for it, and I'll share more once they're more
+                            fleshed out.
+                            <br><br>
+                            For now though, how about some highlights?
+                        </p>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-body-copy">
+                            <p>Real-time sync</p>
+                            <p>Optimizations and additions to both the <em>Scribe</em> engine and the <em>Gloss</em>
+                                engine, focusing on increasing performance, reliability and security</p>
+                            <p>Even more export options!</p>
+                            <p>Even more text formatting options!</p>
+                            <p>More font sizes, families, and finer control over both</p>
+                            <p>New brushes and tools for painting!
+                            </p>
+                            <p>Granlular keyboard customization options</p>
+                            <p>Even more accessibilty features!</p>
+                            <p>UI refinements</p>
+                            <p>Animation touch-ups</p>
+                            <p>Many, <em>many</em> more smaller things, and a couple large ones as well!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="fifth">
+            <header class="section-header">
+                <span class="number">V</span>
+                <span class="title-header">Contact</span>
+            </header>
+            <div class="container">
+                <div class="animation">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="white"
+                        xmlns="http://www.w3.org/2000/svg"></svg>
+                </div>
+                <div class="content">
+                    <div class="introduction">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="email">
+                        <a target="_blank" href="mailto:contact@tanzilzubair.tech"
+                            data-hover="Contact Me!">contact@tanzilzubair.tech</a>
+                    </div>
+                    <div class="links">
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="privacypolicy.html">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Menu (Open State) -->
+    <nav>
+        <button><span class="number">I</span><span class="title-header">Manifesto</span></button>
+        <button>
+            <span class="number">II</span><span class="title-header">Vision</span>
+        </button>
+        <button><span class="number">III</span><span class="title-header">Engineering</span></button>
+        <button>
+            <span class="number">IV</span><span class="title-header">What's next</span>
+        </button>
+        <button><span class="number">V</span><span class="title-header">Contact</span></button>
+    </nav>
+</body>
+<script type="module" src="assets/js/Main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+</html>

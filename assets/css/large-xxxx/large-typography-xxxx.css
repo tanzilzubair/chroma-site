@@ -1,0 +1,121 @@
+/* (min-width: 1400px) */
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+button {
+    font-size: 12px;
+}
+
+nav button {
+    font-size: 16px;
+}
+
+.letters li {
+    font-family: 'Marquee';
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 85px;
+    white-space: nowrap;
+    float: left;
+    -webkit-text-stroke: 2.5px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000000,
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+
+}
+
+.letters li:hover {
+    color: black;
+    text-shadow: 0px 0px 0px white
+}
+
+.letters .separator {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-shadow: 0px 0px 0px white;
+}
+
+.letters .separator:hover {
+    color: #ffffff;
+}
+
+.home-button {
+    font-size: 12px;
+    font-family: 'Times New Toman';
+    font-size: clamp(50px, 10vw, 57px);
+}
+
+.introduction p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.point,
+.links {
+    font-size: 16px;
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    section {
+        font-size: 12px;
+    }
+
+    .section-header {
+        font-size: 14px;
+    }
+
+    .section-header .number {
+        font-weight: bold;
+    }
+
+    #fifth .introduction p {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .point-header {
+        font-size: 24px;
+    }
+
+    .email {
+        font-size: 24px;
+    }
+
+    .links {
+        font-size: 20px;
+    }
+
+    .point-number,
+    .point-title {
+        font-size: 24px;
+    }
+
+    .point-content li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

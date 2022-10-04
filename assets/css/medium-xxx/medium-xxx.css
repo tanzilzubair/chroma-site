@@ -1,0 +1,741 @@
+/* (min-width: 800px) and (max-width: 1000px) */
+/* This is everything from the main navigation bar till the auto-scrolling marquee */
+header {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.main-header {
+    background-color: #000000;
+    border-bottom: 1px solid #ffffff;
+    position: fixed;
+    z-index: 2;
+}
+
+.marquee {
+    z-index: 100000;
+    width: 100vw;
+    background-color: white;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+}
+
+.letters {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.home-button {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* This is the title, the 3 small sub-headings below it, and the description */
+.title {
+    height: 300px;
+    width: 100vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 6vw;
+}
+
+.title-group {
+    margin-top: 50px;
+    padding-right: 17vw;
+}
+
+.title .heading {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 75px;
+    letter-spacing: 5px;
+    margin: 0px;
+}
+
+.title .sub-heading-1 {
+    padding-top: 1vh;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 22.5px;
+    margin: 0px;
+}
+
+.title .sub-heading-2 {
+    padding-top: 1vh;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 22.5px;
+    margin: 0px;
+}
+
+.title .sub-heading-3 {
+    padding-top: 1vh;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 22.5px;
+    margin: 0px;
+}
+
+.blurb {
+    height: 300px;
+    width: 60vw;
+    padding-left: 6vw;
+    padding-right: 5vw;
+}
+
+.blurb p {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 40ch;
+}
+
+/* ------------------------------------------------------------------------- */
+/* This is the 3D spinning text ring*/
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.text-ring {
+    position: absolute;
+    top: 275px;
+    right: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    margin-top: -100px;
+    -webkit-animation: opacity 2s ease-in forwards, descend 1s ease-out forwards;
+    animation: opacity 2s ease-in forwards, descend 1s ease-out forwards;
+    -webkit-animation-delay: 2s;
+    animation-delay: 1.5s;
+    font-family: Inter, sans-serif;
+}
+
+@-webkit-keyframes descend {
+    to {
+        margin-top: 0
+    }
+}
+
+@keyframes descend {
+    to {
+        margin-top: 0
+    }
+}
+
+.circle {
+    transform-style: preserve-3d;
+    -webkit-animation: animate 8s linear infinite;
+    animation: animate 8s linear infinite;
+    font-family: Inter, sans-serif;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        transform: rotateY(1turn) rotateX(20deg)
+    }
+
+    to {
+        transform: rotateY(0deg) rotateX(20deg)
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateY(1turn) rotateX(20deg)
+    }
+
+    to {
+        transform: rotateY(0deg) rotateX(20deg)
+    }
+}
+
+.circle .char {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    padding: 5px 12px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--char-index)*12deg)) translateZ(160px);
+    font-family: Inter, sans-serif;
+}
+
+@-webkit-keyframes opacity {
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes opacity {
+    to {
+        opacity: 1
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/* The 2D spinning dowload button */
+.download-ring {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 675px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.download-arrow svg {
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+
+.download-text {
+    height: 125px;
+    width: 125px;
+    animation: spinText 10s linear infinite;
+}
+
+.download-text span {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    font-size: 13px;
+    transform-origin: 0 50px;
+    font-family: Raleway;
+    font-weight: 500;
+}
+
+@keyframes spinText {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/* The iOS and Android download buttons */
+.download-buttons-container {
+    height: 65px;
+    width: 100%;
+    position: absolute;
+    top: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ios-download {
+    height: 100%;
+    padding-right: 2.5vw;
+}
+
+.ios-download a img {
+    object-fit: contain;
+    height: 100%;
+}
+
+.android-download {
+    height: 100%;
+    padding-left: 2.5vw;
+}
+
+.android-download a img {
+    object-fit: contain;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* The app icon and its text */
+.app-icon-container {
+    position: absolute;
+    top: 425px;
+    right: 10vw;
+    width: 27.5vw;
+}
+
+.app-icon {
+    height: 125px;
+}
+
+.app-icon img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.app-icon-text {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-icon-text p {
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* The copyright text */
+.copyright-text {
+    position: absolute;
+    top: 975px;
+    right: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+.home-prompt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(100% - 120px);
+}
+
+nav {
+    height: calc(100vh - 55px);
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    display: none;
+    background-color: #000000;
+    z-index: 100;
+}
+
+.menu-open main {
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+
+.menu-open nav {
+    display: block;
+}
+
+nav button {
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    height: calc(20vh - 11px);
+    padding-left: 6vw;
+    width: 100%;
+    text-align: inherit;
+}
+
+nav .number {
+    margin-right: 30px;
+}
+
+section {
+    background-color: #000000;
+    border-top: 1px solid #ffffff;
+    color: #ffffff;
+    display: none;
+    padding-top: 55px;
+}
+
+section.active {
+    border-top: none;
+    display: block;
+}
+
+.logo {
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+section .number {
+    margin-right: 5px;
+}
+
+section:not(.home) .animation svg {
+    display: block;
+    padding: 40px 0 60px;
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+
+#fourth .animation svg {
+    width: 45%;
+    padding: 0 0 30px;
+}
+
+#fifth .animation svg {
+    width: 100%;
+    height: 110vw;
+    padding: 0;
+    margin-top: -55px;
+}
+
+.home .container {
+    flex-direction: column;
+}
+
+.home .animation {
+    align-items: center;
+    align-content: center;
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.home .animation svg path {
+    transform-origin: center;
+    opacity: 0;
+}
+
+section .animation {
+    border-bottom: 1px solid #ffffff;
+}
+
+section .animation canvas {
+    display: block;
+}
+
+section .introduction {
+    border-bottom: 1px solid #ffffff;
+    padding: 100px 28px;
+}
+
+#fifth .introduction {
+    padding: 125px 28px 30px;
+}
+
+#fifth .introduction p {
+    width: 90px;
+}
+
+section .section-body {
+    display: flex;
+    flex: 1;
+}
+
+section .section-body-copy {
+    padding: 50px 40px;
+}
+
+section .section-body-copy p {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 2vh;
+}
+
+section .section-body-copy p:before {
+    background-color: #ffffff;
+    border-radius: 8px;
+    content: '';
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 8px;
+}
+
+#fifth .introduction p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .email,
+section .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+section .email {
+    border-bottom: 1px solid #ffffff;
+}
+
+section .links a,
+section .email a {
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .links a:first-child {
+    border-right: 1px solid #ffffff;
+}
+
+section .links a {
+    width: 50%;
+}
+
+section .point {
+    position: relative;
+    display: flex;
+    border-top: 1px solid #fff;
+}
+
+section .point-number {
+    width: 25%;
+    padding: 45px 0;
+    text-align: center;
+    flex-shrink: 0;
+    border-right: 1px solid;
+}
+
+section .point-content {
+    padding-left: 45px;
+    flex-grow: 1;
+}
+
+section .point-content .point-title {
+    position: relative;
+    padding: 45px 0;
+    padding-right: 70px;
+}
+
+section .point-content ul {
+    margin-left: 18px;
+    padding-bottom: 45px;
+    display: none;
+}
+
+section .point-content li {
+    margin-bottom: 15px;
+}
+
+section .point-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+section .point-toggle .icon {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    padding: 30px;
+    margin: -30px;
+}
+
+section .point-toggle .line1,
+section .point-toggle .line2 {
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+section .point-toggle .line1 {
+    width: 24px;
+    height: 1px;
+}
+
+section .point-toggle .line2 {
+    width: 1px;
+    height: 24px;
+}
+
+section .point.is-active .point-content ul {
+    display: block;
+}
+
+section .point.is-active .point-toggle .line2 {
+    display: none;
+}
+
+footer {
+    border-top: 1px solid #ffffff;
+    padding: 56px 28px;
+}
+
+footer p {
+    margin-bottom: 28px;
+}
+
+.hamburger {
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    padding: 18px;
+    margin: -18px;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: #ffffff;
+}
+
+.hamburger label {
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+.hamburger.is-active label {
+    display: none;
+}
+
+.hamburger-box {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+}
+
+.hamburger-inner,
+.hamburger-inner::after {
+    width: 14px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::after {
+    content: '';
+    display: block;
+}
+
+.hamburger--slider .hamburger-inner {
+    top: 5px;
+}
+
+.hamburger--slider .hamburger-inner::after {
+    top: 7px;
+}
+
+.hamburger--slider.is-active .hamburger-inner {
+    transform: translate3d(0, 4px, 0) rotate(45deg);
+}
+
+.hamburger--slider.is-active .hamburger-inner::after {
+    transform: translate3d(0, -7px, 0) rotate(-90deg);
+}
+
+.privacy,
+.terms {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    padding-top: clamp(50px, 6.5%, 60px);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: clamp(60px, 6.5%, 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy div,
+.terms div {
+    width: clamp(30ch, 100%, 50ch);
+}
+
+.info-title {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+.info-subtitle {
+    font-size: clamp(22.5px, 24px, 27.5px);
+    font-weight: 900;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    line-height: 140%;
+}
+
+.info-content {
+    width: clamp(30ch, 100%, 50ch);
+}
+
+.info-content a {
+    text-decoration: underline;
+}
+
+.terms-list li {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    width: clamp(25ch, 100%, 45ch);
+}

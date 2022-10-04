@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width, minimal-ui, viewport-fit=cover, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Chroma</title>
+    <meta name="title" content="Chroma" />
+    <meta name="description"
+        content="Meet Chroma, a weather app for the modern era, with clean design, elegant animations and hyper accurate weather forecasts. 
+    With a focus on the little things as well as the big, Chroma is an absolute joy to use, whether its on iOS, or Android" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chroma.tanzilzubair.tech//" />
+    <meta property="og:title" content="Chroma" />
+    <meta name="description"
+        content="Meet Chroma, a weather app for the modern era, with clean design, elegant animations and hyper accurate weather forecasts. 
+    With a focus on the little things as well as the big, Chroma is an absolute joy to use, whether its on iOS, or Android" />
+
+    <meta property="og:image" content="https://chroma.tanzilzubair.tech/assets/images/share/share.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://chroma.tanzilzubair.tech//" />
+    <meta property="twitter:title" content="Chroma" />
+    <meta name="description"
+        content="Meet Chroma, a weather app for the modern era, with clean design, elegant animations and hyper accurate weather forecasts. 
+With a focus on the little things as well as the big, Chroma is an absolute joy to use, whether its on iOS, or Android" />
+    <meta property="twitter:image" content="https://chroma.tanzilzubair.tech/assets/images/share/share.png" />
+
+    <!-- Favicons / Theme -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#1b1b1b" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Styles -->
+    <link href="assets/css/global.css" rel="stylesheet" />
+    <link href="assets/css/tos&pp-typography.css" rel="stylesheet" />
+    <link href="assets/css/tos&pp.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo" style="z-index:3;">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Chroma logo" />
+            </a>
+        </div>
+        <button class="home-prompt"></button>
+        <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation"
+            onclick="location.href = 'index.html';">
+            <label>Home</label>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+    <div class="terms">
+        <div>
+            <p class="info-title">
+                Chroma 1.0
+            </p>
+            <p class="info-content">
+                <strong>Hello and welcome to Chroma!</strong>
+                <br><br>
+                Now, before we get to the good stuff, I'd like to take a moment to thank you for choosing to use my
+                little app, and tell you that this choice means a lot to me, and that I won't let you down.
+                With that being said, let's move on to the changes!
+                <br><br>
+                Do note however, that, for iOS users, this will be the first version of the app publicly available, so
+                this
+                isn't going to be a list of <em>changes</em> so much so as a list of <em>features</em>.
+            </p>
+
+            <p class="info-subtitle">
+                A Completely Overhauled UI
+            </p>
+            <p class="info-content">
+                Taking the best of what made the previous UI good, and infusing it with custom, purpose-built designs
+                honed with industry standard best practices and principles: built to be an absolute <em>joy</em> to use.
+                <br><br>
+                Listen, I could talk about it all day, but I think we'd both much rather that you go and experience it
+                for yourself!
+            </p>
+            <ul class="whats-new-list">
+                <li>
+                    A more unified, minimal UI with complementary colors, beautiful fonts and everything from buttons,
+                    labels, menus, and animations; <strong><em>everything</em></strong>, redesigned and rebuilt better
+                    than
+                    ever.
+                </li>
+                <li>
+                    Sounds and haptics; the app has <strong><em>both</em></strong> now. Carefully made,
+                    tested and implemented from the ground up to enrich the user
+                    experience: giving more context to available actions and more intuitive
+                    feedback on chosen ones.
+                </li>
+                <li>
+                    Autocomplete that is straight up beautifully animated, full of personality, and that Just Works™.
+                    That's all I'll say, because it's easier if you go and experience it for yourself!
+                </li>
+                <li>So many small and medium sized things, we'd be here all day if I listed them; so, go ahead and just
+                    enjoy them</li>
+            </ul>
+            <p class="info-subtitle">
+                A Radically Redesigned Backend
+            </p>
+            <p class="info-content">Because although taking on this much work at once may have caused me to question my
+                sanity, err
+                <em>several</em> times, what good is overhauling one part of the app, if its forced to drag around the
+                obsolete and
+                burdensome other half everywhere it goes?
+            </p>
+            <ul class="whats-new-list">
+                <li>
+                    <strong><em>The Apollo Engine</em></strong>, a redesigned and completely rewritten, modular, query
+                    and response parsing engine, with more concise, faster running logic than ever before, more
+                    unit-conversion options on top of the current ones, and of course, more resiliency to errors.
+                </li>
+                <li>
+                    Distributed, load-balanced and beefed up servers, running on demand, all over the world, enabling
+                    ultra-fast, sub-second responses <strong><em>globally</em></strong>.
+                </li>
+                <li>
+                    A lot of minor improvements, logic streamlining, bug fixes, performance improvements, etc. etc. to
+                    round out the backend
+                    redesign.
+                </li>
+                <li>Many, many smaller and larger changes under the hood, that enable some of the new features coming
+                    soon!</li>
+            </ul>
+            <p class="info-subtitle">Other Improvements</p>
+            <ul class="whats-new-list">
+                <li>
+                    <strong><em>A whole lot of personality</em></strong>; specifically, in the little things: a trivia
+                    section
+                    curated, formatted and fact-checked by yours truly, and, all too familiar locations as examples on
+                    the autocomplete field,
+                    for example.
+                </li>
+                <li>
+                    Advanced configuration settings, for all you weather buffs who want them.
+                </li>
+                <li>
+                    A brand new splash screen, app icon, app store descriptions and images, among other things, to
+                    really <em>complete</em> the redesign.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav>
+        <button><span class="number">I</span><span class="title">Manifesto</span></button>
+        <button>
+            <span class="number">II</span><span class="title">Vision</span>
+        </button>
+        <button><span class="number">III</span><span class="title">Engineering</span></button>
+        <button>
+            <span class="number">IV</span><span class="title">What's next</span>
+        </button>
+        <button><span class="number">V</span><span class="title">Contact</span></button>
+    </nav>
+    <div class="home-button">
+        <a href="https://tanzilzubair.tech">T</a>
+    </div>
+</body>
+
+</html>

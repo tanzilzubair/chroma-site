@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+:root {
+    overflow-x: hidden;
+}
+
+strong {
+    font-weight: 900;
+}
+
+body,
+button,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+select {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+}
