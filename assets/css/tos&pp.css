@@ -66,7 +66,7 @@
     .marquee {
         z-index: 100000;
         width: 100vh;
-        background-color: white;
+        background-color: #FFFFFF;
         height: 85px;
         overflow: hidden;
         transform: rotateZ(-90deg);
@@ -169,7 +169,7 @@
     }
 
     .app-icon-text p {
-        color: white;
+        color: #FFFFFF;
         text-align: center;
         font-size: 16px;
     }
@@ -184,7 +184,7 @@
     }
 
     .download-arrow svg {
-        color: white;
+        color: #FFFFFF;
         height: 30px;
         width: 30px;
     }
@@ -336,7 +336,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        color: white;
+        color: #FFFFFF;
         font-size: 22px;
         padding: 5px 12px;
         transform-style: preserve-3d;

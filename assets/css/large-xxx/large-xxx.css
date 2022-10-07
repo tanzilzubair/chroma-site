@@ -75,7 +75,7 @@ main {
 .marquee {
     z-index: 100000;
     width: 100vh;
-    background-color: white;
+    background-color: #FFFFFF;
     height: 70px;
     overflow: hidden;
     transform: rotateZ(-90deg);
@@ -98,8 +98,8 @@ main {
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-width: 0px;
-    scrollbar-color: black;
-    scrollbar-gutter: black;
+    scrollbar-color: #000000;
+    scrollbar-gutter: #000000;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -262,7 +262,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    color: white;
+    color: #FFFFFF;
     font-size: 20px;
     padding: 5px 12px;
     transform-style: preserve-3d;
@@ -306,7 +306,7 @@ main {
 }
 
 .download-arrow svg {
-    color: white;
+    color: #FFFFFF;
     height: 30px;
     width: 30px;
 }
@@ -399,7 +399,7 @@ main {
 }
 
 .app-icon-text p {
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     font-size: 15px;
 }

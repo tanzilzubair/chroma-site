@@ -19,7 +19,7 @@ header {
 .marquee {
     z-index: 100000;
     width: 100vw;
-    background-color: white;
+    background-color: #FFFFFF;
     height: 70px;
     overflow: hidden;
     position: absolute;
@@ -187,7 +187,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    color: white;
+    color: #FFFFFF;
     font-size: 20px;
     padding: 5px 12px;
     transform-style: preserve-3d;
@@ -231,7 +231,7 @@ header {
 }
 
 .download-arrow svg {
-    color: white;
+    color: #FFFFFF;
     height: 30px;
     width: 30px;
 }
@@ -320,7 +320,7 @@ header {
 }
 
 .app-icon-text p {
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     font-size: 15px;
     white-space: nowrap;

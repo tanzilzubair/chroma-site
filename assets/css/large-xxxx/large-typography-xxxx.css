@@ -29,8 +29,8 @@ nav button {
     line-height: 85px;
     white-space: nowrap;
     float: left;
-    -webkit-text-stroke: 2.5px black;
-    color: white;
+    -webkit-text-stroke: 2.5px #000000;
+    color: #FFFFFF;
     text-shadow:
         3px 3px 0 #000000,
         -1px -1px 0 #000000,
@@ -41,14 +41,14 @@ nav button {
 }
 
 .letters li:hover {
-    color: black;
+    color: #000000;
     text-shadow: 0px 0px 0px white
 }
 
 .letters .separator {
     padding-left: 30px;
     padding-right: 30px;
-    text-shadow: 0px 0px 0px white;
+    text-shadow: 0px 0px 0px #FFFFFF;
 }
 
 .letters .separator:hover {
