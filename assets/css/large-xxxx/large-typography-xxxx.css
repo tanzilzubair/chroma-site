@@ -29,30 +29,30 @@ nav button {
     line-height: 85px;
     white-space: nowrap;
     float: left;
-    -webkit-text-stroke: 2.5px #000000;
-    color: #FFFFFF;
+    -webkit-text-stroke: 2.5px white;
+    color: #000000;
     text-shadow:
         3px 3px 0 #000000,
         -1px -1px 0 #000000,
         1px -1px 0 #000000,
         -1px 1px 0 #000000,
-        1px 1px 0 #000000;
+        1px 1px 0 white;
 
 }
 
 .letters li:hover {
-    color: #000000;
+    color: white;
     text-shadow: 0px 0px 0px white
 }
 
 .letters .separator {
     padding-left: 30px;
     padding-right: 30px;
-    text-shadow: 0px 0px 0px #FFFFFF;
+    text-shadow: 0px 0px 0px #000000;
 }
 
 .letters .separator:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 .home-button {

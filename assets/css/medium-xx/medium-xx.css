@@ -10,8 +10,8 @@ header {
 }
 
 .main-header {
-    background-color: #000000;
-    border-bottom: 1px solid #ffffff;
+    background-color: white;
+    border-bottom: 1px solid #000000;
     position: fixed;
     z-index: 2;
 }
@@ -19,7 +19,7 @@ header {
 .marquee {
     z-index: 100000;
     width: 100vw;
-    background-color: #FFFFFF;
+    background-color: #000000;
     height: 70px;
     overflow: hidden;
     position: absolute;
@@ -236,7 +236,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    color: #FFFFFF;
+    color: #000000;
     font-size: 20px;
     padding: 5px 12px;
     transform-style: preserve-3d;
@@ -280,7 +280,7 @@ header {
 }
 
 .download-arrow svg {
-    color: #FFFFFF;
+    color: #000000;
     height: 30px;
     width: 30px;
 }
@@ -370,7 +370,7 @@ header {
 }
 
 .app-icon-text p {
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     font-size: 14px;
     white-space: nowrap;
@@ -419,7 +419,7 @@ nav {
     position: absolute;
     top: 55px;
     display: none;
-    background-color: #000000;
+    background-color: white;
     z-index: 100;
 }
 
@@ -434,7 +434,7 @@ nav {
 }
 
 nav button {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
     display: block;
     height: calc(20vh - 11px);
     padding-left: 6vw;
@@ -447,9 +447,9 @@ nav .number {
 }
 
 section {
-    background-color: #000000;
-    border-top: 1px solid #ffffff;
-    color: #ffffff;
+    background-color: white;
+    border-top: 1px solid #000000;
+    color: #000000;
     display: none;
     padding-top: 55px;
 }
@@ -515,7 +515,7 @@ section:not(.home) .animation svg {
 }
 
 section .animation {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
 }
 
 section .animation canvas {
@@ -523,7 +523,7 @@ section .animation canvas {
 }
 
 section .introduction {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
     padding: 100px 28px;
 }
 
@@ -551,7 +551,7 @@ section .section-body-copy p {
 }
 
 section .section-body-copy p:before {
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 8px;
     content: '';
     height: 8px;
@@ -577,7 +577,7 @@ section .links {
 }
 
 section .email {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
 }
 
 section .links a,
@@ -589,7 +589,7 @@ section .email a {
 }
 
 section .links a:first-child {
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid #000000;
 }
 
 section .links a {
@@ -650,7 +650,7 @@ section .point-toggle .icon {
 
 section .point-toggle .line1,
 section .point-toggle .line2 {
-    background-color: #ffffff;
+    background-color: #000000;
     position: absolute;
     transform: translate(-50%, -50%);
 }
@@ -674,7 +674,7 @@ section .point.is-active .point-toggle .line2 {
 }
 
 footer {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #000000;
     padding: 56px 28px;
 }
 
@@ -683,7 +683,7 @@ footer p {
 }
 
 .hamburger {
-    color: #ffffff;
+    color: #000000;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -700,7 +700,7 @@ footer p {
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .hamburger label {
@@ -728,7 +728,7 @@ footer p {
 .hamburger-inner::after {
     width: 14px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #000000;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
