@@ -10,7 +10,7 @@ header {
 }
 
 .main-header {
-    background-color: white;
+    background-color: #FFFFFF;
     border-bottom: 1px solid #000000;
     position: fixed;
     z-index: 2;
@@ -354,7 +354,7 @@ nav {
     position: absolute;
     top: 55px;
     display: none;
-    background-color: white;
+    background-color: #FFFFFF;
     z-index: 100;
 }
 
@@ -382,7 +382,7 @@ nav .number {
 }
 
 section {
-    background-color: white;
+    background-color: #FFFFFF;
     border-top: 1px solid #000000;
     color: #000000;
     display: none;
